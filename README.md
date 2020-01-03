@@ -76,3 +76,12 @@ AJOUTER LE FICHIER .htaccess
     LoginFormAuthenticator
 
     SecurityController
+
+## CREER LES TABLES SQL    
+
+
+    php bin/console make:migration
+
+    => CREER LE FICHIER PHP Version...
+
+    php bin/console doctrine:migrations:migrate
