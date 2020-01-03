@@ -24,11 +24,12 @@ AVEC LA CONSOLE
 
 AJOUTER LE FICHIER .htaccess
 
- composer require symfony/apache-pack
+    composer require symfony/apache-pack
+
 
 
     On va créer 2 controllers
-    
+
     PublicController.php
 
     AdminController.php
@@ -36,6 +37,22 @@ AJOUTER LE FICHIER .htaccess
     php bin/console make:controller PublicController
 
     php bin/console make:controller AdminController
+
+
+
+    ET CHANGER URL POUR ACCUEIL
+
+
+## DATABASE POUR SQL
+
+
+MODIFIER LE FICHIER .env
+
+# DATABASE_URL=mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=5.7
+DATABASE_URL=mysql://root:@127.0.0.1:3306/symfony02?serverVersion=5.7
+
+
+
 
 
 
