@@ -1,9 +1,9 @@
-## MON PROJET SYMFONY
+## MON PROJET SYMFONY 
+
 
 ## INSTALLATION DE SYMFONY
 
-https://symfony.com/doc/current/setup.html#creating-symfony-
-
+https://symfony.com/doc/current/setup.html#creating-symfony-applications
 
 ## GIT EXEMPLE
 
@@ -22,16 +22,15 @@ AVEC LA CONSOLE
 
 ## CONTROLLER POUR L'ESPACE PUBLIC
 
-PublicController.php
+    On va créer 2 controllers
+    
+    PublicController.php
 
-AdminController.php
+    AdminController.php
 
-php bin/console make:controller PublicController
+    php bin/console make:controller PublicController
 
-
-php bin/console make:controller AdminController
-
-
+    php bin/console make:controller AdminController
 
 
 
