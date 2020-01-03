@@ -45,14 +45,25 @@ AJOUTER LE FICHIER .htaccess
 
 ## DATABASE POUR SQL
 
+    MODIFIER LE FICHIER .env
 
-MODIFIER LE FICHIER .env
+    # DATABASE_URL=mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=5.7
+    DATABASE_URL=mysql://root:@127.0.0.1:3306/symfony02?serverVersion=5.7
 
-# DATABASE_URL=mysql://db_user:db_password@127.0.0.1:3306/db_name?serverVersion=5.7
-DATABASE_URL=mysql://root:@127.0.0.1:3306/symfony02?serverVersion=5.7
+    ON VA CREER LA DATABASE EN LIGNE DE COMMANDE
 
+    php bin/console doctrine:database:create
 
+    Created database `symfony02` for connection named default
 
+## CREATION DE ENTITE User AVEC SYMFONY
 
+    php bin/console make:user
 
+    REPONDRE AVEC LES CHOIX PAR DEFAUT...
+
+    created: src/Entity/User.php
+    created: src/Repository/UserRepository.php
+    updated: src/Entity/User.php
+    updated: config/packages/security.yaml
 
